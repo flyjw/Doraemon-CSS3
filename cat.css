@@ -1,0 +1,651 @@
+@charset "utf-8";
+
+/*CSS Document*/
+
+body {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.outside {
+    width: 600px;
+    margin: 50px auto;
+    /*  background-color: #ccc;*/
+}
+
+
+/*整体平移*/
+
+.whole {
+    position: relative;
+    top: -20px;
+    left: 10px;
+    -webkit-transition: left 2s linear;
+    -moz-transition: left 2s linear;
+    -ms-transition: left 2s linear;
+    -o-transition: left 2s linear;
+    transition: left 2s linear;
+}
+
+.whole:hover {
+    position: relative;
+    left: 300px;
+}
+
+
+/*整体平移*/
+
+
+/*头部*/
+
+.whole .head {
+    width: 300px;
+    height: 260px;
+    border-radius: 48%;
+    background-color: #06b5e6;
+    border: 2px solid #434444;
+    box-shadow: 5px 10px 10px #ccc;
+}
+
+.whole .head .face {
+    position: relative;
+    z-index: 2;
+}
+
+.whole .head .face .whiteface {
+    width: 240px;
+    height: 190px;
+    border-radius: 48%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+}
+
+.whole .head .eyes {
+    position: relative;
+    z-index: 3;
+    top: 45px;
+    left: 90px;
+}
+
+.whole .head .eyes .eye {
+    width: 60px;
+    height: 70px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 43%;
+    float: left;
+}
+
+.whole .head .eyes .eye .lefteyeball {
+    width: 13px;
+    height: 13px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 33px;
+    left: 41px;
+}
+
+.whole .head .eyes .eye .righteyeball {
+    width: 13px;
+    height: 13px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 33px;
+    left: 75px;
+}
+
+.whole .head .face .nose {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #c83505;
+    border: 2px solid #000000;
+    z-index: 3;
+    position: absolute;
+    top: 106px;
+    left: 139px;
+}
+
+.whole .head .face .nose .light {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 16px 8px 6px #ffffff;
+}
+
+.whole .head .face .vertical_line {
+    width: 3px;
+    height: 80px;
+    background-color: #3b393d;
+    position: absolute;
+    top: 133px;
+    left: 152px;
+    z-index: 3;
+}
+
+.whole .head .face .mouth {
+    width: 170px;
+    height: 100px;
+    border-bottom: 3px solid #3b393d;
+    border-radius: 90%;
+    position: absolute;
+    top: 110px;
+    left: 67px;
+}
+
+.whole .head .face .beard {
+    width: 200px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 20%;
+    position: absolute;
+    top: 160px;
+    left: 50px;
+    z-index: 2;
+}
+
+.whole .head .face .beard .l_one {
+    width: 55px;
+    height: 2px;
+    background-color: #3b393d;
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top: -30px;
+    -webkit-transform: rotate(200deg);
+    -moz-transform: rotate(200deg);
+    -ms-transform: rotate(200deg);
+    -o-transform: rotate(200deg);
+    transform: rotate(200deg);
+}
+
+.whole .head .face .beard .l_two {
+    width: 55px;
+    height: 2px;
+    background-color: #3b393d;
+    position: absolute;
+    z-index: 2;
+    left: 4px;
+    top: -10px;
+}
+
+.whole .head .face .beard .l_three {
+    width: 55px;
+    height: 2px;
+    background-color: #3b393d;
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
+    -webkit-transform: rotate(160deg);
+    -moz-transform: rotate(160deg);
+    -ms-transform: rotate(160deg);
+    -o-transform: rotate(160deg);
+    transform: rotate(160deg);
+}
+
+.whole .head .face .beard .r_one {
+    width: 55px;
+    height: 2px;
+    background-color: #3b393d;
+    position: absolute;
+    z-index: 2;
+    left: 139px;
+    top: -30px;
+    -webkit-transform: rotate(160deg);
+    -moz-transform: rotate(160deg);
+    -ms-transform: rotate(160deg);
+    -o-transform: rotate(160deg);
+    transform: rotate(160deg);
+}
+
+.whole .head .face .beard .r_two {
+    width: 55px;
+    height: 2px;
+    background-color: #3b393d;
+    position: absolute;
+    z-index: 2;
+    left: 144px;
+    top: -10px;
+}
+
+.whole .head .face .beard .r_three {
+    width: 55px;
+    height: 2px;
+    background-color: #3b393d;
+    position: absolute;
+    z-index: 2;
+    left: 139px;
+    top: 10px;
+    -webkit-transform: rotate(200deg);
+    -moz-transform: rotate(200deg);
+    -ms-transform: rotate(200deg);
+    -o-transform: rotate(200deg);
+    transform: rotate(200deg);
+}
+
+
+/*头部*/
+
+
+/*脖子和项圈*/
+
+.whole .neck {
+    width: 200px;
+    height: 20px;
+    background-color: #ab2903;
+    border-radius: 8px;
+    border: 2px solid #3b393d;
+    position: relative;
+    top: -25px;
+    left: 50px;
+    z-index: 4;
+}
+
+.whole .neck .bell {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    background-color: #e4de1f;
+    position: absolute;
+    left: 81px;
+    top: 4px;
+}
+
+.whole .neck .bell .bell_line {
+    width: 33px;
+    height: 2px;
+    border: 2px solid #3b393d;
+    position: absolute;
+    top: 11px;
+}
+
+.whole .neck .bell .bell_circle {
+    width: 10px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: absolute;
+    top: 20px;
+    left: 13px;
+}
+
+.whole .neck .bell .bell_under {
+    width: 2px;
+    height: 8px;
+    background-color: #000000;
+    position: absolute;
+    top: 28px;
+    left: 17px;
+}
+
+.whole .neck .bell .bell_light {
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    box-shadow: 17px 7px 8px #fff;
+    position: absolute;
+    top: -6px;
+    left: 1px;
+}
+
+
+/*脖子和项圈*/
+
+
+/*身体*/
+
+.whole .body {
+    position: relative;
+    top: -36px;
+    z-index: 2;
+}
+
+.whole .body .tummy {
+    width: 200px;
+    height: 170px;
+    background-color: #07b6e5;
+    border: 2px solid #3b393d;
+    position: absolute;
+    left: 50px;
+    z-index: 3;
+}
+
+.whole .body .bellyband {
+    width: 160px;
+    height: 160px;
+    background-color: #ffffff;
+    border: 2px solid #3b393d;
+    border-radius: 50%;
+    position: absolute;
+    left: 70px;
+    top: -13px;
+    z-index: 4;
+}
+
+.whole .body .pocket {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #3b393d;
+    background-color: #ffffff;
+    position: absolute;
+    left: 90px;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.whole .body .pocket_cover {
+    width: 124px;
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #3b393d;
+    position: absolute;
+    left: 90px;
+    top: 6px;
+    border-radius: 20px 20px 0px 0px;
+    z-index: 6;
+}
+
+.whole .l_hand,
+.whole .r_hand {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+}
+
+.whole .r_hand {
+    left: -30px;
+}
+
+.whole .l_hand .arm,
+.whole .r_hand .arm {
+    width: 80px;
+    height: 50px;
+    background-color: #07b6e5;
+    border: 1px solid #3b393d;
+    box-shadow: -10px 8px 8px #ccc;
+    position: relative;
+    z-index: -1;
+}
+
+.whole .l_hand .arm {
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(35deg);
+    position: absolute;
+    top: 12px;
+    left: -20px;
+}
+
+.whole .r_hand .arm {
+    -webkit-transform: rotate(145deg);
+    -moz-transform: rotate(145deg);
+    -ms-transform: rotate(145deg);
+    -o-transform: rotate(145deg);
+    transform: rotate(145deg);
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.whole .l_hand .palm,
+.whole .r_hand .palm {
+    width: 55px;
+    height: 55px;
+    background-color: #ffffff;
+    border: 2px solid #3b393d;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.whole .l_hand .palm {
+    top: 33px;
+    left: 26px;
+}
+
+.whole .r_hand .palm {
+    top: 35px;
+    left: -4px;
+}
+
+.whole .body .palm_cover {
+    width: 5px;
+    height: 48px;
+    background-color: #07b6e5;
+    position: relative;
+    left: 50px;
+    z-index: 5;
+}
+
+.whole .body .palm_cover2 {
+    width: 5px;
+    height: 48px;
+    background-color: #07b6e5;
+    position: relative;
+    left: 250px;
+    top: -50px;
+    z-index: 5;
+}
+
+.whole .foot {
+    width: 260px;
+    height: 35px;
+    position: relative;
+    top: 40px;
+    left: 21px;
+}
+
+.whole .foot .l_foot {
+    width: 120px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 2px solid #3b393d;
+    border-radius: 75px 55px 55px 35px;
+    box-shadow: -8px 1px 6px #ccc;
+}
+
+.whole .foot .r_foot {
+    width: 120px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 2px solid #3b393d;
+    border-radius: 55px 75px 35px 55px;
+    box-shadow: 8px 1px 6px #ccc;
+    position: relative;
+    top: -34px;
+    left: 130px;
+}
+
+.whole .foot .foot_gap {
+    width: 20px;
+    height: 10px;
+    background-color: #ffffff;
+    border: 2px solid #3b393d;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    top: -78px;
+    left: 115px;
+    z-index: 6;
+}
+
+
+/*身体*/
+
+
+/*滑板*/
+
+.whole .skateboard {
+    width: 330px;
+    height: 30px;
+    background-color: #3d5075;
+    border-radius: 10px 10px 50px 50px;
+    position: relative;
+    top: 39px;
+    left: -16px;
+}
+
+.whole .skateboard .wheels_l {
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border: 12px solid #694a07;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 70px;
+}
+
+.whole .skateboard .wheels_r {
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border: 12px solid #694a07;
+    border-radius: 50%;
+    position: relative;
+    top: -7px;
+    left: 225px;
+}
+
+
+/*滑板*/
+
+h3 {
+    text-align: center;
+}
+
+
+/*眼珠转动*/
+
+.whole .head .eyes .eye .lefteyeball {
+    width: 13px;
+    height: 13px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 33px;
+    left: 41px;
+    -webkit-animation: eyeballmove 3s linear infinite;
+    -moz-animation: eyeballmove 3s linear infinite;
+    -ms-animation: eyeballmove 3s linear infinite;
+    -o-animation: eyeballmove 3s linear infinite;
+    animation: eyeballmove 3s linear infinite;
+}
+
+.whole .head .eyes .eye .righteyeball {
+    width: 13px;
+    height: 13px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 33px;
+    left: 75px;
+    -webkit-animation: eyeballmove 3s linear infinite;
+    -moz-animation: eyeballmove 3s linear infinite;
+    -ms-animation: eyeballmove 3s linear infinite;
+    -o-animation: eyeballmove 3s linear infinite;
+    animation: eyeballmove 3s linear infinite;
+}
+
+
+/*眼珠转动*/
+
+
+/*眼珠动画*/
+
+@-webkit-keyframes eyeballmove {
+    70% {
+        margin: 0 0 0 0;
+    }
+    80% {
+        margin: -22px 0 0 0;
+    }
+    85% {
+        margin: -22px 0 0 5px;
+    }
+    90% {
+        margin: -22px 10px 0 0;
+    }
+    93% {
+        margin: -22px 0 0 0;
+    }
+    96% {
+        margin: 0 0 0 0;
+    }
+}
+
+@-moz-keyframes eyeballmove {
+    70% {
+        margin: 0 0 0 0;
+    }
+    80% {
+        margin: -22px 0 0 0;
+    }
+    85% {
+        margin: -22px 0 0 5px;
+    }
+    90% {
+        margin: -22px 10px 0 0;
+    }
+    93% {
+        margin: -22px 0 0 0;
+    }
+    96% {
+        margin: 0 0 0 0;
+    }
+}
+
+@-o-keyframes eyeballmove {
+    70% {
+        margin: 0 0 0 0;
+    }
+    80% {
+        margin: -22px 0 0 0;
+    }
+    85% {
+        margin: -22px 0 0 5px;
+    }
+    90% {
+        margin: -22px 10px 0 0;
+    }
+    93% {
+        margin: -22px 0 0 0;
+    }
+    96% {
+        margin: 0 0 0 0;
+    }
+}
+
+@keyframes eyeballmove {
+    70% {
+        margin: 0 0 0 0;
+    }
+    80% {
+        margin: -22px 0 0 0;
+    }
+    85% {
+        margin: -22px 0 0 5px;
+    }
+    90% {
+        margin: -22px 10px 0 0;
+    }
+    93% {
+        margin: -22px 0 0 0;
+    }
+    96% {
+        margin: 0 0 0 0;
+    }
+}
+
+
+/*眼珠动画*/
